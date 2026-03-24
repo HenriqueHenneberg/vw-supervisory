@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Manufacturing Supervisory System</title>
+</head>
+<body>
+    <header>
+        <h1>Manufacturing Supervisory System</h1>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>KPI Dashboard</h2>
+            <div class="metrics">
+                <div class="metric">
+                    <h3>TREND</h3>
+                    <p id="trend"></p>
+                </div>
+                <div class="metric">
+                    <h3>MOMENT</h3>
+                    <p id="moment"></p>
+                </div>
+                <div class="metric">
+                    <h3>PLAN</h3>
+                    <p id="plan"></p>
+                </div>
+                <div class="metric">
+                    <h3>REAL</h3>
+                    <p id="real"></p>
+                </div>
+            </div>
+            <h2>Downtime Tracking</h2>
+            <div class="downtime">
+                <h3>Tracking</h3>
+                <p>Technical: <span id="technical-downtime"></span></p>
+                <p>Maintenance: <span id="maintenance-downtime"></span></p>
+                <p>Operational: <span id="operational-downtime"></span></p>
+            </div>
+            <h2>Production Halls</h2>
+            <div id="production-halls">
+                <!-- Halls and stations will be dynamically generated here -->
+            </div>
+            <h2>Production Metrics</h2>
+            <p>Daily Production Target: 320 cars</p>
+            <div>
+                <label for="simulation-speed">Simulation Speed:</label>
+                <select id="simulation-speed">
+                    <option value="real-time">Real-time</option>
+                    <option value="4x">4x Speed</option>
+                    <option value="16x">16x Speed</option>
+                </select>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
